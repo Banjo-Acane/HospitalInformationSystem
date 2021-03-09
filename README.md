@@ -20,7 +20,7 @@ HospitalInformationSystem (HIS)
 
    含勾选自动填写密码登录后，下次登录时自动填写密码功能。
 
-![(https://github.com/Banjo-Acane/HospitalInformationSystem/tree/main/images/1.jpg)]
+![](https://github.com/Banjo-Acane/HospitalInformationSystem/tree/main/images/1.jpg)
 
 
 
