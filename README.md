@@ -20,7 +20,7 @@ HospitalInformationSystem (HIS)
 
    含勾选自动填写密码登录后，下次登录时自动填写密码功能。
 
-![QQ截图20190920123513](D:\NEU\2019年夏季面向对象课设\QQ截图20190920123513.jpg)
+(https://github.com/Banjo-Acane/HospitalInformationSystem/images-folder/xxx.png)
 
 
 
