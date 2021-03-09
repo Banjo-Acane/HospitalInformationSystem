@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="836.0" prefWidth="1258.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerR">
+   <children>
+      <Pane prefHeight="79.0" prefWidth="1258.0" style="-fx-background-color: B0E0E6;">
+         <children>
+            <Label layoutX="14.0" layoutY="18.0" text="东软云医院HIS系统" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft YaHei UI Light" size="28.0" />
+               </font>
+            </Label>
+            <Button fx:id="loginOutButton" blendMode="MULTIPLY" layoutX="1159.0" mnemonicParsing="false" onMouseClicked="#loginOut" prefHeight="37.0" prefWidth="99.0" text="登出账号">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <TabPane layoutY="78.0" prefHeight="757.0" prefWidth="1258.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="挂号">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="626.0" prefWidth="1095.0">
+                     <children>
+                        <Pane layoutX="-1.0" layoutY="-9.0" prefHeight="731.0" prefWidth="1299.0" style="-fx-background-color: F0F0F0;">
+                           <children>
+                              <TextField fx:id="receiptNumTextField" layoutX="109.0" layoutY="73.0" prefHeight="23.0" prefWidth="113.0" />
+                              <GridPane layoutX="39.0" layoutY="154.0" prefHeight="354.0" prefWidth="1081.0">
+                                 <children>
+                                    <TextField fx:id="recordNumTextField" GridPane.columnIndex="1" />
+                                    <TextField fx:id="nameTextField" GridPane.columnIndex="4" />
+                                    <DatePicker fx:id="birthdayDatePicker" onHidden="#calculateAge" GridPane.columnIndex="7" />
+                                    <ChoiceBox fx:id="departmentChoiceBox" prefWidth="150.0" GridPane.columnIndex="10" />
+                                    <TextField fx:id="ageTextField" prefHeight="23.0" prefWidth="341.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <ChoiceBox fx:id="genderChoiceBox" prefHeight="23.0" prefWidth="63.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                                    <ChoiceBox fx:id="registTypeChoiceBox" prefWidth="150.0" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+                                    <ChoiceBox fx:id="doctorChoiceBox" prefHeight="23.0" prefWidth="186.0" GridPane.columnIndex="10" GridPane.rowIndex="1" />
+                                    <TextField fx:id="feeTextField" onMouseClicked="#calculateFee" prefHeight="23.0" prefWidth="341.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <ChoiceBox fx:id="payWayChoiceBox" prefHeight="23.0" prefWidth="144.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                                    <ChoiceBox fx:id="noonChoiceBox" prefHeight="23.0" prefWidth="108.0" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+                                    <CheckBox fx:id="needRecordCheckBox" mnemonicParsing="false" text="需要" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <DatePicker fx:id="consultationDataPicker" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                                    <TextField fx:id="IDnumTextField" prefHeight="23.0" prefWidth="252.0" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+                                    <TextField fx:id="addressTextField" prefHeight="23.0" prefWidth="179.0" GridPane.columnIndex="10" GridPane.rowIndex="3" />
+                                    <ChoiceBox fx:id="payTypeChoiceBox" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <Label text="*病历号：">
+                                       <textFill>
+                                          <LinearGradient endX="1.0" endY="1.0">
+                                             <stops>
+                                                <Stop color="RED" />
+                                                <Stop color="RED" offset="0.00749063670411985" />
+                                                <Stop color="BLACK" offset="0.2247191011235955" />
+                                                <Stop color="BLACK" offset="1.0" />
+                                             </stops>
+                                          </LinearGradient>
+                                       </textFill>
+                                    </Label>
+                                    <Label text="*出生日期:" GridPane.columnIndex="6">
+                                       <textFill>
+                                          <LinearGradient endX="1.0" endY="1.0">
+                                             <stops>
+                                                <Stop color="RED" />
+                                                <Stop color="BLACK" offset="0.32958801498127344" />
+                                                <Stop color="BLACK" offset="1.0" />
+                                             </stops>
+                                          </LinearGradient>
+                                       </textFill>
+                                    </Label>
+                                    <Label text="身份证号:" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                                    <Label text="*姓名:" GridPane.columnIndex="3">
+                                       <textFill>
+                                          <LinearGradient endX="1.0" endY="1.0">
+                                             <stops>
+                                                <Stop color="RED" />
+                                                <Stop color="BLACK" offset="0.4419475655430712" />
+                                                <Stop color="BLACK" offset="1.0" />
+                                             </stops>
+                                          </LinearGradient>
+                                       </textFill>
+                                    </Label>
+                                    <Label text="*年龄:" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                                       <textFill>
+                                          <LinearGradient endX="1.0" endY="1.0">
+                                             <stops>
+                                                <Stop color="RED" />
+                                                <Stop color="BLACK" offset="0.3295880149812735" />
+                                                <Stop color="BLACK" offset="1.0" />
+                                             </stops>
+                                          </LinearGradient>
+                                       </textFill>
+                                    </Label>
+                                    <Label text="家庭住址:" GridPane.columnIndex="9" GridPane.rowIndex="3" />
+                                    <Label text="看诊日期:" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                    <Label text="午别:" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+                                    <Label text="*挂号级别：" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                                       <textFill>
+                                          <LinearGradient endX="1.0" endY="1.0">
+                                             <stops>
+                                                <Stop color="RED" />
+                                                <Stop color="BLACK" offset="0.23970037453183532" />
+                                                <Stop color="BLACK" offset="1.0" />
+                                             </stops>
+                                          </LinearGradient>
+                                       </textFill>
+                                    </Label>
+                                    <Label text="*看诊医生:" GridPane.columnIndex="9" GridPane.rowIndex="1">
+                                       <textFill>
+                                          <LinearGradient endX="1.0" endY="1.0">
+                                             <stops>
+                                                <Stop color="RED" />
+                                                <Stop color="BLACK" offset="0.3295880149812735" />
+                                                <Stop color="BLACK" offset="1.0" />
+                                             </stops>
+                                          </LinearGradient>
+                                       </textFill>
+                                    </Label>
+                                    <Label text="病历本：" GridPane.rowIndex="3" />
+                                    <Label text="*应收金额：" GridPane.rowIndex="2">
+                                       <textFill>
+                                          <LinearGradient endX="1.0" endY="1.0">
+                                             <stops>
+                                                <Stop color="RED" />
+                                                <Stop color="BLACK" offset="0.22846441947565554" />
+                                                <Stop color="BLACK" offset="1.0" />
+                                             </stops>
+                                          </LinearGradient>
+                                       </textFill>
+                                    </Label>
+                                    <Label text="*收费方式:" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                       <textFill>
+                                          <LinearGradient endX="1.0" endY="1.0">
+                                             <stops>
+                                                <Stop color="RED" />
+                                                <Stop color="BLACK" offset="0.2247191011235956" />
+                                                <Stop color="BLACK" offset="1.0" />
+                                             </stops>
+                                          </LinearGradient>
+                                       </textFill>
+                                    </Label>
+                                    <Label text="结算类别：" GridPane.rowIndex="4" />
+                                    <Label prefHeight="15.0" prefWidth="82.0" text="*挂号科室：" GridPane.columnIndex="9">
+                                       <textFill>
+                                          <LinearGradient endX="1.0" endY="1.0">
+                                             <stops>
+                                                <Stop color="RED" />
+                                                <Stop color="BLACK" offset="0.2659176029962548" />
+                                                <Stop color="BLACK" offset="1.0" />
+                                             </stops>
+                                          </LinearGradient>
+                                       </textFill>
+                                    </Label>
+                                    <Label text="*性别：" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                       <textFill>
+                                          <LinearGradient endX="1.0" endY="1.0">
+                                             <stops>
+                                                <Stop color="RED" />
+                                                <Stop color="BLACK" offset="0.3295880149812735" />
+                                                <Stop color="BLACK" offset="1.0" />
+                                             </stops>
+                                          </LinearGradient>
+                                       </textFill>
+                                    </Label>
+                                 </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="185.0" minWidth="3.0" prefWidth="68.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="483.0" minWidth="10.0" prefWidth="110.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="483.0" minWidth="2.0" prefWidth="9.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="494.0" minWidth="10.0" prefWidth="67.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="527.0" minWidth="10.0" prefWidth="124.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="527.0" minWidth="10.0" prefWidth="15.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="527.0" minWidth="10.0" prefWidth="68.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="527.0" minWidth="10.0" prefWidth="205.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="527.0" minWidth="0.0" prefWidth="18.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="527.0" minWidth="10.0" prefWidth="69.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="527.0" minWidth="10.0" prefWidth="232.0" />
+                                 </columnConstraints>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                              <Button layoutX="933.0" layoutY="568.0" mnemonicParsing="false" onAction="#createNewRegistration" text="挂号" />
+                              <Button fx:id="clearButton" layoutX="1047.0" layoutY="568.0" mnemonicParsing="false" onMouseClicked="#clearField" text="清空" />
+                              <Label layoutX="39.0" layoutY="70.0" prefHeight="29.0" prefWidth="57.0" text="*发票号：">
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop color="RED" />
+                                          <Stop color="RED" offset="0.00749063670411985" />
+                                          <Stop color="BLACK" offset="0.2546816479400749" />
+                                          <Stop color="BLACK" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="退号">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane prefHeight="814.0" prefWidth="1260.0" style="-fx-background-color: F0F0F0;">
+                           <children>
+                              <Label layoutX="85.0" layoutY="38.0" text="患者信息查询" />
+                              <HBox layoutX="134.0" layoutY="192.0" prefHeight="23.0" prefWidth="807.0" spacing="65.0">
+                                 <children>
+                                    <HBox layoutX="87.0" layoutY="62.0">
+                                       <children>
+                                          <Label layoutX="87.0" layoutY="66.0" text="姓名：" />
+                                          <TextField fx:id="PatientName" disable="true" layoutX="146.0" layoutY="62.0" />
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="422.0" layoutY="62.0">
+                                       <children>
+                                          <Label layoutX="422.0" layoutY="66.0" text="身份证号：" />
+                                          <TextField fx:id="PatientID" disable="true" layoutX="482.0" layoutY="62.0" />
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="808.0" layoutY="70.0">
+                                       <children>
+                                          <Label layoutX="808.0" layoutY="74.0" text="家庭住址：" />
+                                          <TextField fx:id="PatientAddress" disable="true" layoutX="864.0" layoutY="70.0" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                              <Label layoutX="85.0" layoutY="152.0" text="患者信息确认" />
+                              <HBox layoutX="134.0" layoutY="75.0">
+                                 <children>
+                                    <Label layoutX="142.0" layoutY="60.0" text="病历号：" />
+                                    <TextField fx:id="MedicalNumTF" layoutX="190.0" layoutY="56.0" promptText="输入患者病历号查询" />
+                                    <Button layoutX="376.0" layoutY="56.0" mnemonicParsing="false" onAction="#searchThePatient" text="搜索" />
+                                 </children>
+                              </HBox>
+                              <Button layoutX="860.0" layoutY="285.0" mnemonicParsing="false" onMouseClicked="#concelTheRegister" text="退号" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

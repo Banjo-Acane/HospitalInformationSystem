@@ -1,0 +1,5 @@
+{"department":"null","fee":0.0,"id":"ghy","location":"Register","name":"ghy","password":"ghy123","remPassword":false}
+{"department":"普通内科","fee":60.0,"id":"huatuo","location":"Doctor","name":"华佗","password":"huatuo233","remPassword":true}
+{"department":"神经内科","fee":100.0,"id":"MYXNF","location":"Doctor","name":"刘洪斌","password":"MYXNF233","remPassword":false}
+{"department":"中医风湿免疫内科","fee":200.0,"id":"XSLZY","location":"Doctor","name":"乌仁吉","password":"Ga233","remPassword":true}
+{"department":"null","fee":0.0,"id":"Acane123","location":"Payer","name":"Acane","password":"123456","remPassword":false}

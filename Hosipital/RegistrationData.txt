@@ -1,0 +1,8 @@
+{"address":"","age":20,"birthday":"1999-04-03","date":"2019-09-04","department":"男性不育","fee":60.0,"gender":"男","id":"","name":"张建国","needRecord":false,"number":1,"payway":"现金","receiptNum":"201909151","state":"未诊"}
+{"address":"","age":6,"birthday":"2013-09-26","department":"小儿皮肤科","fee":60.0,"gender":"女","id":"","name":"王二麻子","needRecord":false,"noonType":"上午","number":2,"payway":"现金","receiptNum":"201909141","state":"已诊"}
+{"address":"","age":46,"birthday":"1973-08-30","department":"理疗科","fee":60.0,"gender":"男","id":"","name":"赵四","needRecord":false,"number":5,"payway":"现金","receiptNum":"201909152","state":"未诊"}
+{"address":"","age":54,"birthday":"1965-05-07","department":"神经内科","fee":60.0,"gender":"男","id":"","name":"谢广坤","needRecord":false,"number":6,"payway":"现金","receiptNum":"201909153","state":"已诊"}
+{"address":"","age":11,"birthday":"2008-09-10","department":"小儿呼吸科","fee":60.0,"gender":"男","id":"","name":"张天凤","needRecord":false,"number":7,"payway":"移动支付","receiptNum":"201909171","state":"已诊"}
+{"address":"","age":19,"birthday":"2000-03-14","department":"理疗科","fee":66.0,"gender":"女","id":"","name":"李雨嘎","needRecord":false,"number":8,"receiptNum":"201909172","state":"已诊"}
+{"address":"","age":47,"birthday":"1972-09-06","department":"消化内科","fee":61.0,"gender":"男","id":"","name":"王大国","needRecord":false,"noonType":"上午","number":9,"payway":"现金","receiptNum":"2019092000","state":"未诊"}
+{"address":"你家楼下","age":19,"birthday":"2000-08-12","date":"2019-09-21","department":"性病科","fee":60.0,"gender":"男","id":"","name":"林宇辰","needRecord":false,"noonType":"上午","number":10,"payway":"现金","receiptNum":"2019092100","state":"已诊"}

@@ -1,0 +1,3 @@
+{"name":"新建处方1","state":"模板","range":"全院"}
+{"name":"新建处方2","state":"模板","range":"科室"}
+{"name":"脑血栓/心肌梗塞","prescription":{"MYXNF":{"amount":"两盒","code":"","dosage":"每天两次","format":"盒","name":"蒙药心脑方","pinyin":"MYXNF","price":233.33,"typeId":"","unit":"","usage":"一次一盒"}},"state":"模板","range":"个人"}
