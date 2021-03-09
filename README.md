@@ -30,7 +30,8 @@ HospitalInformationSystem (HIS)
 
    *标注的为必填项，若未填满必填信息就点击挂号按钮，则会弹出提示窗口，无法进行挂号操作。
 
-   ![1](C:\Users\17468\Desktop\1.jpg)
+   
+![](https://github.com/Banjo-Acane/HospitalInformationSystem/tree/main/images/2.png)
 
    
 
@@ -40,11 +41,12 @@ HospitalInformationSystem (HIS)
 
    可为患者添加权重值。
 
-   ###### ![2](C:\Users\17468\Desktop\3.png)
+![](https://github.com/Banjo-Acane/HospitalInformationSystem/tree/main/images/3.png)
 
    
 
-4. ###### 病种树查询与患者排序![4](C:\Users\17468\Desktop\4.png)
+4. ###### 病种树查询与患者排序
+![](https://github.com/Banjo-Acane/HospitalInformationSystem/tree/main/images/4.png)
  
 ##### 算法设计：
 
